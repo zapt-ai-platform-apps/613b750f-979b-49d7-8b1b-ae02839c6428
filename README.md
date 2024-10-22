@@ -1,35 +1,35 @@
 # Best Earth Facts
 
-Best Earth Facts is an app that allows users to generate and save the most interesting facts about planet Earth. Users can explore, generate, and save fascinating facts, enhancing their knowledge about our planet.
+Best Earth Facts is an app that allows users to generate, save, and explore interesting facts about planet Earth. This application provides an engaging way to learn more about our planet through AI-generated content and additional interactive features.
 
 ## User Journey
 
 1. **Sign In with ZAPT**
-   - The user opens the app and is presented with a sign-in page.
-   - The user clicks on "Sign in with ZAPT" and uses their preferred method to sign in (Google, Facebook, Apple, or magic link via email).
+   - When the user opens the app, they are presented with a sign-in page.
+   - The user clicks on "Sign in with ZAPT" and chooses their preferred method to sign in (Google, Facebook, Apple, or magic link via email).
 
 2. **Home Page**
    - Upon successful sign-in, the user is redirected to the home page.
-   - The home page displays a list of saved Earth facts, if any.
+   - The home page displays a list of saved Earth facts, if any exist.
 
 3. **Generate a New Fact**
-   - The user clicks on the "Generate Fact" button to create a new Earth fact.
-   - The app fetches a new fact about Earth using AI and displays it in an input field.
+   - The user clicks on the "Generate Fact" button to create a new fact about Earth.
+   - The app uses AI to generate a new interesting fact, which is displayed in the input field for the user to review.
 
 4. **Save a Fact**
-   - The user can review the generated fact and make any edits if desired.
-   - The user clicks on the "Save Fact" button to save the fact to their personal collection.
+   - After reviewing or editing the generated fact, the user clicks on the "Save Fact" button.
+   - The fact is saved to the user's personal collection and displayed in the list of facts.
 
 5. **View Saved Facts**
-   - The user can scroll through the list of saved facts on the home page.
-   - Each fact is displayed with the date it was created.
+   - The user can scroll through their list of saved facts on the home page.
+   - Each fact is displayed clearly for easy reading.
 
 6. **Additional Features**
    - **Generate Image**
      - The user can generate an image related to Earth by clicking the "Generate Image" button.
-     - The generated image is displayed and can be viewed within the app.
+     - An AI-generated image is displayed in the app for the user to view.
    - **Text to Speech**
-     - The user can convert a fact into speech by clicking the "Text to Speech" button.
+     - The user can convert the current fact into speech by clicking the "Text to Speech" button.
      - An audio player appears, allowing the user to listen to the fact.
    - **Generate Markdown Story**
      - The user can generate a markdown-formatted story about Earth by clicking the "Generate Markdown Story" button.
@@ -42,10 +42,10 @@ Best Earth Facts is an app that allows users to generate and save the most inter
 
 - **OpenAI ChatGPT API (via `chatgpt_request` event)**
   - Used to generate new facts about Earth and markdown stories.
-  - Prompts the AI to provide facts or stories in specific formats.
+  - The AI provides content based on prompts in specific formats.
 
 - **OpenAI DALL·E API (via `generate_image` event)**
-  - Used to generate images related to Earth based on user prompts.
+  - Used to generate images related to Earth based on predefined prompts.
 
 - **Text-to-Speech API (via `text_to_speech` event)**
   - Converts text facts into speech, providing an audio representation.
