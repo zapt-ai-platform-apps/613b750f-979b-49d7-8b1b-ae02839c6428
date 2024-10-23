@@ -149,7 +149,7 @@ function App() {
   };
 
   return (
-    <div class="min-h-screen bg-gradient-to-br from-green-100 to-blue-100 p-4 text-gray-800">
+    <div class="h-full bg-gradient-to-br from-green-100 to-blue-100 p-4 text-gray-800">
       <Show
         when={currentPage() === 'homePage'}
         fallback={
