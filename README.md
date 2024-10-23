@@ -35,10 +35,14 @@ Best Earth Facts is an app that allows users to generate, save, and explore inte
      - The user can generate a markdown-formatted story about Earth by clicking the "Generate Markdown Story" button.
      - The story is displayed in a readable format within the app.
 
-7. **Sign Out**
+7. **Error Logging**
+   - The app uses Sentry to capture and monitor errors.
+   - This helps in quickly identifying and resolving any issues that arise.
+
+8. **Sign Out**
    - The user can sign out of the app by clicking the "Sign Out" button in the header.
 
-## External APIs Used
+## External Services Used
 
 - **OpenAI ChatGPT API (via `chatgpt_request` event)**
   - Used to generate new facts about Earth and markdown stories.
@@ -50,7 +54,12 @@ Best Earth Facts is an app that allows users to generate, save, and explore inte
 - **Text-to-Speech API (via `text_to_speech` event)**
   - Converts text facts into speech, providing an audio representation.
 
+- **Sentry Error Logging**
+  - Captures and monitors errors within the application.
+  - Assists in diagnosing and fixing issues promptly.
+
 ## Environment Variables
 
 - `VITE_PUBLIC_APP_ID` - Your ZAPT app ID.
 - `NEON_DB_URL` - Connection URL for the Neon PostgreSQL database.
+- `VITE_PUBLIC_SENTRY_DSN` - Your Sentry DSN for error logging.
