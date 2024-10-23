@@ -43,6 +43,7 @@ Best Earth Facts is an app that allows users to generate, save, and explore inte
 8. **Error Logging**
    - The app uses Sentry to capture and monitor errors.
    - This helps in quickly identifying and resolving any issues that arise.
+   - Users can test the error logging by triggering a test error.
 
 9. **Sign Out**
    - The user can sign out of the app by clicking the "Sign Out" button in the header.
