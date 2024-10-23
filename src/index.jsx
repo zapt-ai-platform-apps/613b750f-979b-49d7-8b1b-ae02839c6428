@@ -6,7 +6,7 @@ import * as Sentry from "@sentry/browser";
 // Initialize Sentry error logging
 Sentry.init({
   dsn: import.meta.env.VITE_PUBLIC_SENTRY_DSN,
-  integrations: [Sentry.browserTracingIntegration()],
+  integrations: [new Sentry.BrowserTracing()],
   // Tag errors as frontend
   initialScope: {
     tags: {

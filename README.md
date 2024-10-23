@@ -35,11 +35,16 @@ Best Earth Facts is an app that allows users to generate, save, and explore inte
      - The user can generate a markdown-formatted story about Earth by clicking the "Generate Markdown Story" button.
      - The story is displayed in a readable format within the app.
 
-7. **Error Logging**
+7. **Trigger Error for Testing**
+   - The user can click the "Trigger Error" button to intentionally cause an error.
+   - This allows testing of the Sentry error logging integration.
+   - The app will throw an error, which should be captured and logged by Sentry.
+
+8. **Error Logging**
    - The app uses Sentry to capture and monitor errors.
    - This helps in quickly identifying and resolving any issues that arise.
 
-8. **Sign Out**
+9. **Sign Out**
    - The user can sign out of the app by clicking the "Sign Out" button in the header.
 
 ## External Services Used
@@ -57,6 +62,7 @@ Best Earth Facts is an app that allows users to generate, save, and explore inte
 - **Sentry Error Logging**
   - Captures and monitors errors within the application.
   - Assists in diagnosing and fixing issues promptly.
+  - Users can test the error logging by triggering a test error.
 
 ## Environment Variables
 

@@ -37,7 +37,7 @@ function App() {
 
     return () => {
       authListener.data.unsubscribe();
-    }
+    };
   });
 
   const handleSignOut = async () => {
@@ -146,6 +146,10 @@ function App() {
     } finally {
       setLoading(false);
     }
+  };
+
+  const handleTriggerError = () => {
+    throw new Error('This is a test error for Sentry integration.');
   };
 
   return (
@@ -260,6 +264,12 @@ function App() {
                 >
                   <Show when={loading() && !markdownText()}>Generating Story...</Show>
                   <Show when={!loading() || markdownText()}>Generate Markdown Story</Show>
+                </button>
+                <button
+                  onClick={handleTriggerError}
+                  class="w-full px-6 py-3 bg-red-500 text-white rounded-lg hover:bg-red-600 transition duration-300 ease-in-out transform hover:scale-105 cursor-pointer"
+                >
+                  Trigger Error
                 </button>
               </div>
             </div>
