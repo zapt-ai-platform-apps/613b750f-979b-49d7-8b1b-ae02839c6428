@@ -41,9 +41,9 @@ Best Earth Facts is an app that allows users to generate, save, and explore inte
    - The app will throw an error, which should be captured and logged by Sentry.
 
 8. **Error Logging**
-   - The app uses Sentry to capture and monitor errors.
+   - The app uses Sentry to capture and monitor errors in both the frontend and backend.
    - This helps in quickly identifying and resolving any issues that arise.
-   - Users can test the error logging by triggering a test error.
+   - Users can test the error logging by triggering a test error on the frontend or causing errors in backend API calls.
 
 9. **Sign Out**
    - The user can sign out of the app by clicking the "Sign Out" button in the header.
@@ -61,7 +61,7 @@ Best Earth Facts is an app that allows users to generate, save, and explore inte
   - Converts text facts into speech, providing an audio representation.
 
 - **Sentry Error Logging**
-  - Captures and monitors errors within the application.
+  - Captures and monitors errors within the application on both frontend and backend.
   - Assists in diagnosing and fixing issues promptly.
   - Users can test the error logging by triggering a test error.
 
@@ -70,3 +70,4 @@ Best Earth Facts is an app that allows users to generate, save, and explore inte
 - `VITE_PUBLIC_APP_ID` - Your ZAPT app ID.
 - `NEON_DB_URL` - Connection URL for the Neon PostgreSQL database.
 - `VITE_PUBLIC_SENTRY_DSN` - Your Sentry DSN for error logging.
+- `VITE_PUBLIC_APP_ENV` - Application environment (e.g., "production", "development").

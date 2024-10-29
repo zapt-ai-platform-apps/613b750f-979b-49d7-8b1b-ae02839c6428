@@ -1,6 +1,22 @@
+import * as Sentry from "@sentry/node";
 import { initializeZapt } from '@zapt/zapt-js';
 
+if (!Sentry.getCurrentHub().getClient()) {
+  Sentry.init({
+    dsn: process.env.VITE_PUBLIC_SENTRY_DSN,
+    environment: process.env.VITE_PUBLIC_APP_ENV,
+    initialScope: {
+      tags: {
+        type: 'backend',
+        projectId: process.env.VITE_PUBLIC_APP_ID
+      }
+    }
+  });
+}
+
 const { supabase } = initializeZapt(process.env.VITE_PUBLIC_APP_ID);
+
+export { Sentry };
 
 export async function authenticateUser(req) {
   const authHeader = req.headers.authorization;
