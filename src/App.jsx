@@ -153,16 +153,18 @@ function App() {
   };
 
   return (
-    <div class="min-h-screen bg-gradient-to-br from-green-100 to-blue-100 p-4 text-gray-800">
+    <div class="h-full bg-gradient-to-br from-green-100 to-blue-100 p-4 text-gray-800">
       <Show
         when={currentPage() === 'homePage'}
         fallback={
-          <div class="flex items-center justify-center min-h-screen">
+          <div class="flex items-center justify-center h-full">
             <div class="w-full max-w-md p-8 bg-white rounded-xl shadow-lg">
-              <img src="https://images.unsplash.com/photo-1537420327992-d6e192287183?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NjQ4Nzh8MHwxfHNlYXJjaHw1fHxBJTIwYmVhdXRpZnVsJTIwaW1hZ2UlMjBvZiUyMEVhcnRoJTIwZnJvbSUyMHNwYWNlfGVufDB8fHx8MTczMDY1MTE0NXww&ixlib=rb-4.0.3&q=80&w=1080"
+              <img src="https://images.unsplash.com/photo-1541873676-a18131494184?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NjQ4Nzh8MHwxfHNlYXJjaHw0fHxBJTIwYmVhdXRpZnVsJTIwaW1hZ2UlMjBvZiUyMEVhcnRoJTIwZnJvbSUyMHNwYWNlfGVufDB8fHx8MTczMDY1MTE0NXww&ixlib=rb-4.0.3&q=80&w=1080"
                 
                 alt="A beautiful image of Earth from space"
                 data-image-request="A beautiful image of Earth from space"
+                width="600"
+                height="400"
                 class="w-full mb-6 rounded-lg"
               />
               <h2 class="text-3xl font-bold mb-6 text-green-600 text-center">Sign in with ZAPT</h2>
@@ -198,10 +200,12 @@ function App() {
             </button>
           </div>
 
-          <img src="https://images.unsplash.com/photo-1484589065579-248aad0d8b13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NjQ4Nzh8MHwxfHNlYXJjaHwxfHxBJTIwYmVhdXRpZnVsJTIwaW1hZ2UlMjBvZiUyMEVhcnRoJTIwZnJvbSUyMHNwYWNlfGVufDB8fHx8MTczMDY1MTE0NXww&ixlib=rb-4.0.3&q=80&w=1080"
+          <img src="https://images.unsplash.com/photo-1446776709462-d6b525c57bd3?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NjQ4Nzh8MHwxfHNlYXJjaHwyfHxBJTIwYmVhdXRpZnVsJTIwaW1hZ2UlMjBvZiUyMEVhcnRoJTIwZnJvbSUyMHNwYWNlfGVufDB8fHx8MTczMDY1MTE0NXww&ixlib=rb-4.0.3&q=80&w=1080"
             
-            alt="A beautiful image of Earth"
+            alt="A beautiful image of Earth from space"
             data-image-request="A beautiful image of Earth from space"
+            width="800"
+            height="400"
             class="w-full mb-8 rounded-lg shadow-lg"
           />
 
@@ -292,7 +296,13 @@ function App() {
             <Show when={generatedImage()}>
               <div>
                 <h3 class="text-xl font-bold mb-2 text-green-600">Generated Image</h3>
-                <img src={generatedImage()} alt="Generated Earth Image" class="w-full rounded-lg shadow-md" />
+                <img
+                  src={generatedImage()}
+                  alt="Generated Earth Image"
+                  width="600"
+                  height="400"
+                  class="w-full rounded-lg shadow-md"
+                />
               </div>
             </Show>
             <Show when={audioUrl()}>

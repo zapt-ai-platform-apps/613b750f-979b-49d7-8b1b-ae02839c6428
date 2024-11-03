@@ -12,6 +12,7 @@ Best Earth Facts is an app that allows users to generate, save, and explore inte
 2. **Home Page**
    - Upon successful sign-in, the user is redirected to the home page.
    - The home page displays a header with a beautiful image of Earth, making the app more visually engaging.
+   - The images are appropriately sized to display correctly on all devices.
    - The home page shows a list of saved Earth facts, if any exist.
 
 3. **Generate a New Fact**
@@ -29,25 +30,24 @@ Best Earth Facts is an app that allows users to generate, save, and explore inte
 6. **Additional Features**
    - **Generate Image**
      - The user can generate an image related to Earth by clicking the "Generate Image" button.
-     - An AI-generated image is displayed in the app for the user to view.
+     - An AI-generated image is displayed in the app with appropriate size settings.
    - **Text to Speech**
      - The user can convert the current fact into speech by clicking the "Text to Speech" button.
      - An audio player appears, allowing the user to listen to the fact.
    - **Generate Markdown Story**
      - The user can generate a markdown-formatted story about Earth by clicking the "Generate Markdown Story" button.
      - The story is displayed in a readable format within the app.
+   - **Trigger Error for Testing**
+     - The user can click the "Trigger Error" button to intentionally cause an error.
+     - This allows testing of the Sentry error logging integration.
+     - The app will throw an error, which should be captured and logged by Sentry.
 
-7. **Trigger Error for Testing**
-   - The user can click the "Trigger Error" button to intentionally cause an error.
-   - This allows testing of the Sentry error logging integration.
-   - The app will throw an error, which should be captured and logged by Sentry.
-
-8. **Error Logging**
+7. **Error Logging**
    - The app uses Sentry to capture and monitor errors in both the frontend and backend.
    - This helps in quickly identifying and resolving any issues that arise.
    - Users can test the error logging by triggering a test error on the frontend or causing errors in backend API calls.
 
-9. **Sign Out**
+8. **Sign Out**
    - The user can sign out of the app by clicking the "Sign Out" button in the header.
 
 ## External Services Used
