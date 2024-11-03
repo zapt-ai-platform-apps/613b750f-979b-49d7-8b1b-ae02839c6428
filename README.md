@@ -5,12 +5,14 @@ Best Earth Facts is an app that allows users to generate, save, and explore inte
 ## User Journey
 
 1. **Sign In with ZAPT**
-   - When the user opens the app, they are presented with a sign-in page.
+   - When the user opens the app, they are presented with a sign-in page featuring a beautiful image of Earth.
+   - The image enhances the visual appeal and provides an engaging introduction to the app.
    - The user clicks on "Sign in with ZAPT" and chooses their preferred method to sign in (Google, Facebook, Apple, or magic link via email).
 
 2. **Home Page**
    - Upon successful sign-in, the user is redirected to the home page.
-   - The home page displays a list of saved Earth facts, if any exist.
+   - The home page displays a header with a beautiful image of Earth, making the app more visually engaging.
+   - The home page shows a list of saved Earth facts, if any exist.
 
 3. **Generate a New Fact**
    - The user clicks on the "Generate Fact" button to create a new fact about Earth.

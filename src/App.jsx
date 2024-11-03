@@ -153,13 +153,19 @@ function App() {
   };
 
   return (
-    <div class="h-full bg-gradient-to-br from-green-100 to-blue-100 p-4 text-gray-800">
+    <div class="min-h-screen bg-gradient-to-br from-green-100 to-blue-100 p-4 text-gray-800">
       <Show
         when={currentPage() === 'homePage'}
         fallback={
           <div class="flex items-center justify-center min-h-screen">
             <div class="w-full max-w-md p-8 bg-white rounded-xl shadow-lg">
-              <h2 class="text-3xl font-bold mb-6 text-green-600">Sign in with ZAPT</h2>
+              <img src="https://images.unsplash.com/photo-1537420327992-d6e192287183?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NjQ4Nzh8MHwxfHNlYXJjaHw1fHxBJTIwYmVhdXRpZnVsJTIwaW1hZ2UlMjBvZiUyMEVhcnRoJTIwZnJvbSUyMHNwYWNlfGVufDB8fHx8MTczMDY1MTE0NXww&ixlib=rb-4.0.3&q=80&w=1080"
+                
+                alt="A beautiful image of Earth from space"
+                data-image-request="A beautiful image of Earth from space"
+                class="w-full mb-6 rounded-lg"
+              />
+              <h2 class="text-3xl font-bold mb-6 text-green-600 text-center">Sign in with ZAPT</h2>
               <a
                 href="https://www.zapt.ai"
                 target="_blank"
@@ -181,7 +187,7 @@ function App() {
           </div>
         }
       >
-        <div class="max-w-6xl mx-auto h-full">
+        <div class="max-w-6xl mx-auto">
           <div class="flex justify-between items-center mb-8">
             <h1 class="text-4xl font-bold text-green-600">Best Earth Facts</h1>
             <button
@@ -192,7 +198,14 @@ function App() {
             </button>
           </div>
 
-          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 h-full">
+          <img src="https://images.unsplash.com/photo-1484589065579-248aad0d8b13?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w2NjQ4Nzh8MHwxfHNlYXJjaHwxfHxBJTIwYmVhdXRpZnVsJTIwaW1hZ2UlMjBvZiUyMEVhcnRoJTIwZnJvbSUyMHNwYWNlfGVufDB8fHx8MTczMDY1MTE0NXww&ixlib=rb-4.0.3&q=80&w=1080"
+            
+            alt="A beautiful image of Earth"
+            data-image-request="A beautiful image of Earth from space"
+            class="w-full mb-8 rounded-lg shadow-lg"
+          />
+
+          <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div class="col-span-1 md:col-span-2 lg:col-span-1">
               <h2 class="text-2xl font-bold mb-4 text-green-600">Add New Fact</h2>
               <form onSubmit={saveFact} class="space-y-4">
